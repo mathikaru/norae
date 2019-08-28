@@ -32,13 +32,19 @@ function search(){
 
 }
 
-
+/*
+$(function(){
+	$('#searchInput').keyup(function(){
+		console.log('keyup');
+	});
+});
+*/
 </script>
 
 </head>
 
 <body>
-	<input type='text' placeholder='Search..' id='searchInput' onkeyup='search()'><br>
+	<input type='text' placeholder='Search..' id='searchInput' onkeydown='search()'><br>
 	<div>
 	<p id='KY'></p>
 	<p id='TJ'></p>
