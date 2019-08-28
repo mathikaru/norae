@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+#searchInput{
+	width: 80%;
+}
+</style>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+function search(){
+	var input = document.getElementById('searchInput').value;
+	var table = document.getElementById('songTable');
+	var tr = table.getElementsByTagName('tr');
+	console.log(input);
+
+	for (var i=0;i<tr.length;i++){
+		var td = tr[i].getElementsByTagName('td')[0];
+		if (td){
+			var txtValue = td.textContent || td.innerText;
+			if (txtValue.includes(input)){
+				tr[i].style.display="";
+			}
+			else{
+				tr[i].style.display="none";
+			}
+		}
+	}
+
+}
+
+
+</script>
+
+</head>
+
+<body>
+	<input type='text' placeholder='Search..' id='searchInput' onkeyup='search()'><br>
+	<div>
+	<p id='KY'></p>
+	<p id='TJ'></p>
+	<p id='note'></p>
+	</div>
+	<table id='songTable' width='80%'>
+		<tr class="header">
+			<th style="width:40%;">이름</th>
+			<th style="width:20%;">금영번호</th>
+			<th style="width:20%;">태진번호</th>
+			<th style="width:20%;">메모</th>
+		</tr>
+
+		<tr>
+			<td>카타오모이</td>
+			<td></td>
+			<td>28886</td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td>내가 죽으려고 생각한 것은-Amazarashi</td>
+			<td></td>
+			<td>28688</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>이별만이 인생이다</td>
+			<td></td>
+			<td>27995</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>마음짓기</td>
+			<td></td>
+			<td>27906</td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
