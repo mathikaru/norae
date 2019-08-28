@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
 <style>
+
+#inputMethods{
+	width:100%;
+	white-space: nowrap;
+}
 #searchInput{
-	width: 100%;
+	width: 90%;
+	box-sizing: border-box;
 	font-size: 16px;
 	padding: 12px 20px 12px 40px;
 	border: 1px solid #ddd;
 	margin-bottom: 12px;
 	font-size: 16px;
+}
+
+#searchButton{
+	width:10%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+	background: white;
+	margin-bottom: 12px;
 }
 
 #songTable{
@@ -69,7 +84,10 @@ $(function(){
 </head>
 
 <body>
-	<input type='text' placeholder='Search..' id='searchInput' onkeydown='search()'><br>	
+	<div id='inputMethods'>
+	<input type='text' placeholder='Search..' id='searchInput' onkeydown='search()'>
+	<input type='button' id='searchButton'  value='검색!' onclick='search()'>
+	</div>
 	<table id='songTable'>
 		<tr class="header">
 			<th style="width:50%;">이름</th>
