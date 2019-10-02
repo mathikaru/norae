@@ -7,8 +7,8 @@ function search(){
 		var td = tr[i].getElementsByTagName('td')[0];
 		if (td){
 			var txtValue = td.textContent || td.innerText;
-			txtValue = txtValue.replace(/\s+/g, '');
-			if ((txtValue.includes(input.replace(/\s+/g, '')))){
+			txtValue = txtValue.replace(/\s+/g, '').toLowerCase();
+			if ((txtValue.includes(input.replace(/\s+/g, '').toLowerCase()))){
 				tr[i].style.display="";
 			}
 			else{
