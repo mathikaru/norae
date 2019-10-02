@@ -6,29 +6,8 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="js/norae.js"></script>
       <title>norae</title>
-<script>
-function search(){
-	var input = document.getElementById('searchInput').value;
-	var table = document.getElementById('songTable');
-	var tr = table.getElementsByTagName('tr');
-	
-	for (var i=0;i<tr.length;i++){
-		var td = tr[i].getElementsByTagName('td')[0];
-		if (td){
-			var txtValue = td.textContent || td.innerText;
-			txtValue = txtValue.replace(/\s+/g, '');
-			if ((txtValue.includes(input.replace(/\s+/g, '')))){
-				tr[i].style.display="";
-			}
-			else{
-				tr[i].style.display="none";
-			}
-		}
-	}
-
-}
-</script>
 </head>
 
 <body>
