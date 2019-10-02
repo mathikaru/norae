@@ -10,11 +10,19 @@
       <title>norae</title>
 </head>
 
+<style>
+@media screen and (max-width: 992px){
+	nav .brand-logo {
+		visibility: hidden;
+	}
+}
+</style>
+
 <body>
 	<nav>
 		<div class="nav-wrapper purple lighten-1" role="navigation">
 			<div class="nav-wrapper container">
-				<a href="#" class="brand-logo">norae</a>
+				<a href="#" class="brand-logo left">norae</a>
 					<ul class="right">
 					<li>
 						<input style="color:white;" type="text" placeholder="검색.." id="searchInput" onkeydown="search()">
@@ -30,10 +38,10 @@
 	<br>
 	<table id='songTable'>
 		<tr class="header">
-			<th style="width:50%;">이름</th><th style="width:30%;">아티스트</th><th style="width:10%;">금영번호</th><th style="width:10%;">태진번호</th>
+			<th style="width:50%;">이름</th><th style="width:30%;">아티스트</th><th style="min-width:40px;width:10%;">금영번호</th><th style="min-width:40px;width:10%;">태진번호</th>
 		</tr>
 
-		<tr><td>노래방에서</td><td>장범준</td><td></td><td>53705</td></tr>
+		<tr><td>노래방에서</td><td>장범준</td><td>97118</td><td>53705</td></tr>
 		<tr><td>한숨</td><td>이하이</td><td></td><td>46165</td><tr>
 		<tr><td>카타오모이カタオモイ</td><td>Aimer</td><td></td><td>28886</td></tr>
 		<tr><td>Ref:rain</td><td>Aimer</td><td></td><td>28832</td></tr>
