@@ -20,7 +20,7 @@
 
 ### 기여 - 노래 추가
 
-songs 폴더에 `노래이름.json`이라는 파일명으로 [양식](https://github.com/3-24/norae/blob/master/songs/format)에 따라 파일을 만들어준 후 Push Request를 보내주세요! 양식을 어떻게 사용하는지 모르겠다면 해당 폴더 안에 다른 `json` 파일들을 읽어보면 감이 올 겁니다.
+songs 폴더에 `곡명.json`이라는 파일명으로 [양식](https://github.com/3-24/norae/blob/master/songs/format)에 따라 파일을 만들어준 후 Push Request를 보내주세요! 양식을 어떻게 사용하는지 모르겠다면 해당 폴더 안에 다른 `json` 파일들을 읽어보면 감이 올 겁니다.
 
 ```json
 {
@@ -33,3 +33,4 @@ songs 폴더에 `노래이름.json`이라는 파일명으로 [양식](https://gi
 }
 ```
 
+파일명은 위에 적힌 title에서 공백만 언더바(`_`)로 바꿔주면 됩니다.
