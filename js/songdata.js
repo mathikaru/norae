@@ -45,11 +45,29 @@ var data = [
 }
 ,
 {
+	"title": "アスノヨゾラ哨戒班",
+	"artist": "Orangestar",
+	"title_ko": "내일의 밤하늘 초계반",
+	"lang": "jp",
+	"num_ky": "44091",
+	"num_tj": "27984"
+}
+,
+{
 	"title": "カタオモイ",
 	"artist": "Aimer",
 	"lang": "jp",
 	"title_ko": "카타오모이",
 	"num_tj": "28886"
+}
+,
+{
+	"title": "ツギハギスタッカート",
+	"artist": "とあ",
+	"title_ko": "누덕누덕 스타카토",
+	"lang": "jp",
+	"num_ky": "44176",
+	"num_tj": "28728"
 }
 ,
 {
@@ -61,9 +79,18 @@ var data = [
 }
 ,
 {
-	"title": "命に嫌われている",
+	"title": "君の知らない物語",
+	"artist": "supercell",
+	"title_ko": "네가 모르는 이야기",
+	"lang": "jp",
+	"num_ky": "43123",
+	"num_tj": "26959"
+}
+,
+{
+	"title": "命に嫌われている。",
 	"artist": "カンザキイオリ",
-	"title_ko": "생명에게 미움받고 있어",
+	"title_ko": "생명에게 미움받고 있어.",
 	"lang": "jp",
 	"num_tj": "68051"
 }
@@ -74,6 +101,15 @@ var data = [
 	"title_ko": "마음탓",
 	"lang": "jp",
 	"num_tj": "27906"
+}
+,
+{
+	"title": "恋愛サーキュレーション",
+	"artist": "花澤 香菜",
+	"title_ko": "연애 서큘레이션",
+	"lang": "jp",
+	"num_ky": "43227",
+	"num_tj": "27027"
 }
 ,
 {
